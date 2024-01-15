@@ -9,6 +9,7 @@ import Foundation
 import SwiftKeychainWrapper
 
 protocol CredentialsStorageProtocol: AnyObject {
+    var isLoggedIn: Bool { get set }
     var firstName: String? { get set }
     var lastName: String? { get set }
     var email: String? { get set }
@@ -22,9 +23,19 @@ final class CredentialsStorage: CredentialsStorageProtocol {
     private let keychainWrapper = KeychainWrapper.standard
     
     private enum Keys: String {
+        case isLoggedIn
         case firstNameKey
         case lastNameKey
         case emailKey
+    }
+    
+    var isLoggedIn: Bool {
+        get {
+            keychainWrapper.bool(forKey: Keys.isLoggedIn.rawValue) ?? false
+        }
+        set {
+            keychainWrapper.set(newValue, forKey: Keys.isLoggedIn.rawValue)
+        }
     }
     
     var firstName: String? {

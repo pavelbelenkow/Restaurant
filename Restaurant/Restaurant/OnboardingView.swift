@@ -45,6 +45,12 @@ struct OnboardingView: View {
                     dismissButton: .default(Text("OK"))
                 )
             })
+            
+            .onAppear {
+                if credentialsStorage.isLoggedIn {
+                    isLoggedIn.toggle()
+                }
+            }
         }
     }
     
@@ -80,6 +86,7 @@ struct OnboardingView: View {
         credentialsStorage.firstName = firstName
         credentialsStorage.lastName = lastName
         credentialsStorage.email = email
+        credentialsStorage.isLoggedIn.toggle()
         
         isLoggedIn.toggle()
     }
