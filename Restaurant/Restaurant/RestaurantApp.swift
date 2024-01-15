@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct RestaurantApp: App {
+    private let credentialsStorage = CredentialsStorage.shared
+    
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            if let _ = credentialsStorage.firstName {
+                HomeView()
+            } else {
+                OnboardingView()
+            }
         }
     }
 }
