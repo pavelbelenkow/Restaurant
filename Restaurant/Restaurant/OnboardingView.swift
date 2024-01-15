@@ -11,32 +11,41 @@ struct OnboardingView: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var email = ""
-    @State private var showRegisterInvalidMessage = false
     @State private var errorMessage = ""
+    @State private var showRegisterInvalidMessage = false
+    @State private var isLoggedIn = false
     
     private let credentialsStorage = CredentialsStorage.shared
     
     var body: some View {
-        VStack {
-            TextField("First Name", text: $firstName)
-            TextField("Last Name", text: $lastName)
-            TextField("Email", text: $email)
-                .keyboardType(.emailAddress)
-                .textContentType(.emailAddress)
-                .autocorrectionDisabled()
-                .textInputAutocapitalization(.never)
-            Button("Register") {
-                validateRegister()
+        NavigationView {
+            VStack {
+                NavigationLink(isActive: $isLoggedIn) {
+                    HomeView()
+                } label: {
+                    EmptyView()
+                }
+
+                TextField("First Name", text: $firstName)
+                TextField("Last Name", text: $lastName)
+                TextField("Email", text: $email)
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.never)
+                Button("Register") {
+                    validateRegister()
+                }
             }
+            .padding()
+            .alert(isPresented: $showRegisterInvalidMessage, content: {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            })
         }
-        .padding()
-        .alert(isPresented: $showRegisterInvalidMessage, content: {
-            Alert(
-                title: Text("Error"),
-                message: Text(errorMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        })
     }
     
     private func validateRegister() {
@@ -71,6 +80,8 @@ struct OnboardingView: View {
         credentialsStorage.firstName = firstName
         credentialsStorage.lastName = lastName
         credentialsStorage.email = email
+        
+        isLoggedIn.toggle()
     }
     
     private func isValid(name: String) -> Bool {
