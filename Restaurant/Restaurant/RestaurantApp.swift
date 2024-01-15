@@ -13,11 +13,7 @@ struct RestaurantApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if let _ = credentialsStorage.firstName {
-                HomeView()
-            } else {
-                OnboardingView()
-            }
+            OnboardingView()
         }
     }
 }
