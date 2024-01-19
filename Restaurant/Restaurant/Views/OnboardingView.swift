@@ -38,6 +38,7 @@ struct OnboardingView: View {
                 }
             }
             .padding()
+            .textFieldStyle(.roundedBorder)
             .alert(isPresented: $showRegisterInvalidMessage, content: {
                 Alert(
                     title: Text("Error"),

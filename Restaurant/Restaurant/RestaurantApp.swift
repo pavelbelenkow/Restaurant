@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct RestaurantApp: App {
-    private let credentialsStorage = CredentialsStorage.shared
     
     var body: some Scene {
         WindowGroup {
