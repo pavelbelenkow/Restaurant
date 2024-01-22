@@ -12,15 +12,7 @@ struct RestaurantApp: App {
     
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
-                .onTapGesture {
-                    UIApplication.shared.sendAction(
-                        #selector(UIResponder.resignFirstResponder),
-                        to: nil,
-                        from: nil,
-                        for: nil
-                    )
-                }
+            SplashView()
         }
     }
 }
