@@ -99,6 +99,7 @@
 			children = (
 				593791552B51D90D0035A24C /* RestaurantApp.swift */,
 				5999FE352B55C0C50069A501 /* Models */,
+				5982A6732B5F24DC009A3744 /* ViewModels */,
 				5999FE362B55C0CD0069A501 /* Views */,
 				5999FE372B55C10F0069A501 /* Services */,
 				5999FE322B55BCE00069A501 /* CoreData */,
@@ -115,6 +116,15 @@
 				5937915C2B51D90E0035A24C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5982A6732B5F24DC009A3744 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */,
+				5999FE3C2B55C4C30069A501 /* MenuModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5999FE322B55BCE00069A501 /* CoreData */ = {
@@ -157,8 +167,6 @@
 		5999FE372B55C10F0069A501 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */,
-				5999FE3C2B55C4C30069A501 /* MenuModel.swift */,
 				59C1D5FD2B54797500DF2349 /* CredentialsStorage.swift */,
 			);
 			path = Services;
