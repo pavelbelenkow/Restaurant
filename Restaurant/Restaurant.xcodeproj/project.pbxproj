@@ -34,7 +34,6 @@
 		59D8C57B2B5DC85E001932E7 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C57A2B5DC85E001932E7 /* Font+Extensions.swift */; };
 		59D8C57E2B5DD510001932E7 /* RegistrationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C57D2B5DD510001932E7 /* RegistrationFormView.swift */; };
 		59D8C5802B5DD6C0001932E7 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C57F2B5DD6C0001932E7 /* UserCredentials.swift */; };
-		59D8C5822B5DD88B001932E7 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C5812B5DD88B001932E7 /* RegistrationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +64,6 @@
 		59D8C57A2B5DC85E001932E7 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		59D8C57D2B5DD510001932E7 /* RegistrationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormView.swift; sourceTree = "<group>"; };
 		59D8C57F2B5DD6C0001932E7 /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
-		59D8C5812B5DD88B001932E7 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +159,6 @@
 			children = (
 				5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */,
 				5999FE3C2B55C4C30069A501 /* MenuModel.swift */,
-				59D8C5812B5DD88B001932E7 /* RegistrationService.swift */,
 				59C1D5FD2B54797500DF2349 /* CredentialsStorage.swift */,
 			);
 			path = Services;
@@ -286,7 +283,6 @@
 				59251FDE2B558FCA0057D510 /* HomeView.swift in Sources */,
 				593791562B51D90D0035A24C /* RestaurantApp.swift in Sources */,
 				5999FE402B55C84C0069A501 /* Restaurant.xcdatamodeld in Sources */,
-				59D8C5822B5DD88B001932E7 /* RegistrationService.swift in Sources */,
 				5999FE392B55C1330069A501 /* MenuList.swift in Sources */,
 				59D8C5782B5DC53C001932E7 /* CircleButton.swift in Sources */,
 				594CFDCF2B5C6D7700F45240 /* OnboardingView.swift in Sources */,
