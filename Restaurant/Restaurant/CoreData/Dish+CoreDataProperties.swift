@@ -18,7 +18,7 @@ extension Dish {
 
     @NSManaged public var category: String?
     @NSManaged public var dishDescription: String?
-    @NSManaged public var dishId: String?
+    @NSManaged public var dishId: UUID?
     @NSManaged public var image: String?
     @NSManaged public var price: String?
     @NSManaged public var title: String?
@@ -44,37 +44,37 @@ extension Dish : Identifiable {
         }
     }
     
-    static func exists(title: String, price: String, _ context: NSManagedObjectContext) -> Bool {
-        let request = Dish.request()
-        let titlePredicate = NSPredicate(format: "title == %@", title)
-        let pricePredicate = NSPredicate(format: "price == %@", price)
-        request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [titlePredicate, pricePredicate])
+    static func fetchDish(with uuid: UUID, _ context: NSManagedObjectContext) -> Dish? {
+        let request = Dish.fetchRequest()
+        let predicate = NSPredicate(format: "dishId == %@", uuid as CVarArg)
+        request.predicate = predicate
         
         do {
-            let results = try context.fetch(request) as? [Dish]
-            
-            print("Fetch results count: \(String(describing: results?.count))")
-            return results?.isEmpty == false
-        } catch let error {
-            print(error.localizedDescription)
-            return false
+            let results = try context.fetch(request)
+            return results.first
+        } catch {
+            print("Error fetching dish: \(error)")
+            return nil
         }
     }
     
     static func createDishesFrom(menu: [MenuItem], _ context: NSManagedObjectContext) {
         
         for item in menu {
-            if !(Self.exists(title: item.title, price: item.price, context)) {
-                print("Adding dish with ID: \(item.id)")
+            if let existingDish = Self.fetchDish(with: item.uuid, context) {
+                existingDish.title = item.title
+                existingDish.dishDescription = item.description
+                existingDish.image = item.image
+                existingDish.price = item.price
+                existingDish.category = item.category
+            } else {
                 let dish = Dish(context: context)
+                dish.dishId = item.uuid
                 dish.title = item.title
                 dish.dishDescription = item.description
-                dish.dishId = String(item.id)
                 dish.image = item.image
                 dish.price = item.price
                 dish.category = item.category
-            } else {
-                print("Duplicate dish found with title: \(item.title), price: \(item.price)")
             }
         }
     }

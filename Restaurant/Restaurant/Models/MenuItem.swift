@@ -15,3 +15,17 @@ struct MenuItem: Decodable & Identifiable {
     let image: String
     let category: String
 }
+
+extension MenuItem {
+    private static var idToUUIDMap: [Int: UUID] = [:]
+    
+    var uuid: UUID {
+        if let storedUUID = Self.idToUUIDMap[id] {
+            return storedUUID
+        } else {
+            let newUUID = UUID()
+            Self.idToUUIDMap[id] = newUUID
+            return newUUID
+        }
+    }
+}
