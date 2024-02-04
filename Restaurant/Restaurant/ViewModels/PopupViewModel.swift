@@ -5,7 +5,7 @@
 //  Created by Pavel Belenkow on 04.02.2024.
 //
 
-import SwiftUI
+import Foundation
 
 final class PopupViewModel: ObservableObject {
     
