@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject private var menuModel = MenuViewModel()
+    @StateObject private var popupModel = PopupViewModel()
+    @State private var selectedTab = 0
+    
     private let persistentController = PersistenceController.shared
     
     var body: some View {
-        TabView {
-            MenuView()
+        TabView(selection: $selectedTab) {
+            MenuView(menuModel: menuModel, popupModel: popupModel, selectedTab: $selectedTab)
                 .environment(\.managedObjectContext, persistentController.container.viewContext)
                 .tabItem { Label("Menu", systemImage: "list.dash") }
+                .tag(0)
             
             UserProfileView()
                 .tabItem { Label("Profile", systemImage: "square.and.pencil") }
+                .tag(1)
         }
         .navigationBarBackButtonHidden()
+        .popup(with: popupModel)
     }
 }
 
