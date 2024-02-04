@@ -67,7 +67,7 @@ struct OnboardingView: View {
                             .cornerRadius(8)
                             .padding()
                     }
-                    .fullScreenCover(isPresented: .constant(onboardingCompleted)) {
+                    .fullScreenCover(isPresented: $onboardingCompleted) {
                         RegistrationView()
                     }
                     
