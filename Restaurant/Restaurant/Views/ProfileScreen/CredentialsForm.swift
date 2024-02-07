@@ -1,5 +1,5 @@
 //
-//  CredentialsFields.swift
+//  CredentialsForm.swift
 //  Restaurant
 //
 //  Created by Pavel Belenkow on 07.02.2024.

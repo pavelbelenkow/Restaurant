@@ -18,6 +18,12 @@
 		5947692B2B601BE900D2D656 /* MenuBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947692A2B601BE900D2D656 /* MenuBreakdownView.swift */; };
 		5947692D2B601BF800D2D656 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947692C2B601BF800D2D656 /* MenuItemsView.swift */; };
 		5947692F2B60442600D2D656 /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947692E2B60442600D2D656 /* RestaurantInfo.swift */; };
+		594AB7452B73CE03001BCBAB /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB7442B73CE03001BCBAB /* ProfileImageView.swift */; };
+		594AB7472B73F8B2001BCBAB /* CredentialsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB7462B73F8B2001BCBAB /* CredentialsForm.swift */; };
+		594AB7492B73F96F001BCBAB /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB7482B73F96F001BCBAB /* ActionButtons.swift */; };
+		594AB74B2B73FB73001BCBAB /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB74A2B73FB73001BCBAB /* LogOutButton.swift */; };
+		594AB74F2B740322001BCBAB /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB74E2B740322001BCBAB /* TextFieldStyles.swift */; };
+		594AB7512B740A66001BCBAB /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594AB7502B740A66001BCBAB /* ButtonStyles.swift */; };
 		594CFDCF2B5C6D7700F45240 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594CFDCE2B5C6D7700F45240 /* OnboardingView.swift */; };
 		596015322B6FDE4E00D5E0E3 /* RestaurantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596015312B6FDE4E00D5E0E3 /* RestaurantInfoView.swift */; };
 		596015352B6FDF6A00D5E0E3 /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596015342B6FDF6A00D5E0E3 /* CategoryButtonView.swift */; };
@@ -34,7 +40,7 @@
 		596CC5AF2B63BA180052A9C6 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FA70862B63B6A6006EE35D /* MarkaziText-Medium.ttf */; };
 		596CC5B32B63BA180052A9C6 /* Karla-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FA70932B63B6F3006EE35D /* Karla-ExtraBold.ttf */; };
 		596CC5B62B63BA180052A9C6 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59FA70912B63B6F3006EE35D /* Karla-Bold.ttf */; };
-		5982A6722B5F1A8B009A3744 /* RegistrationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */; };
+		5982A6722B5F1A8B009A3744 /* UserCredentialsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982A6712B5F1A8B009A3744 /* UserCredentialsViewModel.swift */; };
 		599942AD2B5342C40070D2CB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599942AC2B5342C40070D2CB /* RegistrationView.swift */; };
 		5999FE312B55BCCF0069A501 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999FE302B55BCCF0069A501 /* PersistenceController.swift */; };
 		5999FE342B55BD340069A501 /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999FE332B55BD340069A501 /* FetchedObjects.swift */; };
@@ -69,6 +75,12 @@
 		5947692A2B601BE900D2D656 /* MenuBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBreakdownView.swift; sourceTree = "<group>"; };
 		5947692C2B601BF800D2D656 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
 		5947692E2B60442600D2D656 /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
+		594AB7442B73CE03001BCBAB /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		594AB7462B73F8B2001BCBAB /* CredentialsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsForm.swift; sourceTree = "<group>"; };
+		594AB7482B73F96F001BCBAB /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
+		594AB74A2B73FB73001BCBAB /* LogOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
+		594AB74E2B740322001BCBAB /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
+		594AB7502B740A66001BCBAB /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		594CFDCE2B5C6D7700F45240 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		596015312B6FDE4E00D5E0E3 /* RestaurantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoView.swift; sourceTree = "<group>"; };
 		596015342B6FDF6A00D5E0E3 /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
@@ -80,7 +92,7 @@
 		596015422B6FE2DF00D5E0E3 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
 		596015442B701B8900D5E0E3 /* MenuItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailView.swift; sourceTree = "<group>"; };
 		596CC5B72B63BBA20052A9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewModel.swift; sourceTree = "<group>"; };
+		5982A6712B5F1A8B009A3744 /* UserCredentialsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsViewModel.swift; sourceTree = "<group>"; };
 		599942AC2B5342C40070D2CB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		5999FE302B55BCCF0069A501 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		5999FE332B55BD340069A501 /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
@@ -138,7 +150,6 @@
 		593791542B51D90D0035A24C /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				596CC5B72B63BBA20052A9C6 /* Info.plist */,
 				593791552B51D90D0035A24C /* RestaurantApp.swift */,
 				5999FE352B55C0C50069A501 /* Models */,
 				5982A6732B5F24DC009A3744 /* ViewModels */,
@@ -148,6 +159,7 @@
 				59D8C5792B5DC712001932E7 /* Helpers */,
 				59FA70892B63B6BD006EE35D /* Fonts */,
 				593791592B51D90E0035A24C /* Assets.xcassets */,
+				596CC5B72B63BBA20052A9C6 /* Info.plist */,
 				5937915B2B51D90E0035A24C /* Preview Content */,
 			);
 			path = Restaurant;
@@ -159,6 +171,18 @@
 				5937915C2B51D90E0035A24C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		593E47992B7034F800686664 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				59251FE12B559E980057D510 /* UserProfileView.swift */,
+				594AB7442B73CE03001BCBAB /* ProfileImageView.swift */,
+				594AB7462B73F8B2001BCBAB /* CredentialsForm.swift */,
+				594AB7482B73F96F001BCBAB /* ActionButtons.swift */,
+				594AB74A2B73FB73001BCBAB /* LogOutButton.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		594769252B601B8C00D2D656 /* Menu */ = {
@@ -215,7 +239,7 @@
 		5982A6732B5F24DC009A3744 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5982A6712B5F1A8B009A3744 /* RegistrationFormViewModel.swift */,
+				5982A6712B5F1A8B009A3744 /* UserCredentialsViewModel.swift */,
 				5999FE3C2B55C4C30069A501 /* MenuViewModel.swift */,
 				596015422B6FE2DF00D5E0E3 /* PopupViewModel.swift */,
 			);
@@ -253,7 +277,7 @@
 				59D8C5702B5DC448001932E7 /* Onboarding */,
 				59D8C57C2B5DD4D5001932E7 /* Registration */,
 				59E80DBB2B697489006902C5 /* HomeScreen */,
-				59251FE12B559E980057D510 /* UserProfileView.swift */,
+				593E47992B7034F800686664 /* ProfileScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +303,8 @@
 		59D8C5792B5DC712001932E7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				594AB7502B740A66001BCBAB /* ButtonStyles.swift */,
+				594AB74E2B740322001BCBAB /* TextFieldStyles.swift */,
 				596015402B6FE29E00D5E0E3 /* ViewModifiers.swift */,
 				5960153E2B6FE24F00D5E0E3 /* View+Extensions.swift */,
 				59D8C57A2B5DC85E001932E7 /* Font+Extensions.swift */,
@@ -402,6 +428,7 @@
 				59251FE02B5590C40057D510 /* MenuView.swift in Sources */,
 				5999FE312B55BCCF0069A501 /* PersistenceController.swift in Sources */,
 				59D8C5802B5DD6C0001932E7 /* UserCredentials.swift in Sources */,
+				594AB74B2B73FB73001BCBAB /* LogOutButton.swift in Sources */,
 				596015412B6FE29E00D5E0E3 /* ViewModifiers.swift in Sources */,
 				5960153F2B6FE24F00D5E0E3 /* View+Extensions.swift in Sources */,
 				5947692B2B601BE900D2D656 /* MenuBreakdownView.swift in Sources */,
@@ -410,6 +437,7 @@
 				5960153A2B6FE14C00D5E0E3 /* ImageViewerView.swift in Sources */,
 				59D8C57B2B5DC85E001932E7 /* Font+Extensions.swift in Sources */,
 				596015432B6FE2DF00D5E0E3 /* PopupViewModel.swift in Sources */,
+				594AB74F2B740322001BCBAB /* TextFieldStyles.swift in Sources */,
 				59251FE22B559E980057D510 /* UserProfileView.swift in Sources */,
 				59AD381C2B5922F200439791 /* Dish+CoreDataProperties.swift in Sources */,
 				592F50622B59BE1B00BB00CE /* MenuItemView.swift in Sources */,
@@ -429,14 +457,18 @@
 				59E80DBA2B69744A006902C5 /* HeaderView.swift in Sources */,
 				594CFDCF2B5C6D7700F45240 /* OnboardingView.swift in Sources */,
 				59C1D5FE2B54797500DF2349 /* CredentialsStorage.swift in Sources */,
+				594AB7452B73CE03001BCBAB /* ProfileImageView.swift in Sources */,
+				594AB7512B740A66001BCBAB /* ButtonStyles.swift in Sources */,
 				596015382B6FE0A500D5E0E3 /* MenuItemsDetailView.swift in Sources */,
 				5999FE3B2B55C13D0069A501 /* MenuItem.swift in Sources */,
 				5947692D2B601BF800D2D656 /* MenuItemsView.swift in Sources */,
 				594769292B601BBB00D2D656 /* HeroSectionView.swift in Sources */,
 				5960153C2B6FE1DF00D5E0E3 /* AddToOrderButtonView.swift in Sources */,
 				59D8C5742B5DC4B5001932E7 /* SplashView.swift in Sources */,
-				5982A6722B5F1A8B009A3744 /* RegistrationFormViewModel.swift in Sources */,
+				5982A6722B5F1A8B009A3744 /* UserCredentialsViewModel.swift in Sources */,
 				59D8C57E2B5DD510001932E7 /* RegistrationFormView.swift in Sources */,
+				594AB7472B73F8B2001BCBAB /* CredentialsForm.swift in Sources */,
+				594AB7492B73F96F001BCBAB /* ActionButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,8 +609,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,9 +618,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pavelbelenkow.Restaurant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -607,8 +643,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,9 +652,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pavelbelenkow.Restaurant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
