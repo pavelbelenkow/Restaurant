@@ -11,5 +11,6 @@ struct UserCredentials {
     var firstName: String
     var lastName: String
     var email: String
+    var image: Data?
     var isLoggedIn: Bool
 }
