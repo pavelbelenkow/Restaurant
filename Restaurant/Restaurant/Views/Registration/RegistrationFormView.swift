@@ -8,33 +8,26 @@
 import SwiftUI
 
 struct RegistrationFormView: View {
-    @ObservedObject var viewModel: RegistrationFormViewModel
+    
+    @ObservedObject var viewModel: UserCredentialsViewModel
     
     private let credentialsStorage = CredentialsStorage.shared
 
     var body: some View {
         VStack {
             NavigationLink(
-                destination: HomeView(),
+                destination: HomeView(credentialsModel: viewModel),
                 isActive: $viewModel.userCredentials.isLoggedIn
             ) {
                 EmptyView()
             }
             
-            TextField("First Name", text: $viewModel.userCredentials.firstName)
-            TextField("Last Name", text: $viewModel.userCredentials.lastName)
-            TextField("Email", text: $viewModel.userCredentials.email)
-                .keyboardType(.emailAddress)
-                .textContentType(.emailAddress)
-                .autocorrectionDisabled()
-                .textInputAutocapitalization(.never)
+            CredentialsForm(viewModel: viewModel)
             
             Button("Register") {
-                viewModel.validateRegister()
+                viewModel.processCredentials()
             }
         }
-        .padding()
-        .textFieldStyle(.roundedBorder)
         .alert(isPresented: $viewModel.showRegisterInvalidMessage, content: {
             Alert(
                 title: Text("Error"),
@@ -42,7 +35,6 @@ struct RegistrationFormView: View {
                 dismissButton: .default(Text("OK"))
             )
         })
-        
         .onAppear {
             if credentialsStorage.isLoggedIn {
                 viewModel.userCredentials.isLoggedIn.toggle()
