@@ -11,6 +11,15 @@ struct HeaderView: View {
     
     @Binding var selectedTab: Int
     
+    private var profileImage: Image {
+        if let imageData = CredentialsStorage.shared.image,
+           let uiImage = UIImage(data: imageData) {
+            Image(uiImage: uiImage)
+        } else {
+            Image(.profileImagePlaceholder)
+        }
+    }
+    
     var body: some View {
         ZStack {
             Image(.restaurantLogo)
@@ -24,11 +33,11 @@ struct HeaderView: View {
                 Button {
                     selectedTab = 1
                 } label: {
-                    Image(.profileImagePlaceholder)
+                    profileImage
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 44, height: 44)
                         .clipShape(Circle())
+                        .frame(width: 60, height: 60)
                 }
                 .padding(.trailing)
             }
