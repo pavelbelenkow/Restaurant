@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @ObservedObject var credentialsModel: UserCredentialsViewModel
+    
     @StateObject private var menuModel = MenuViewModel()
     @StateObject private var popupModel = PopupViewModel()
     @State private var selectedTab = 0
@@ -22,7 +24,7 @@ struct HomeView: View {
                 .tabItem { Label("Menu", systemImage: "list.dash") }
                 .tag(0)
             
-            UserProfileView()
+            UserProfileView(viewModel: credentialsModel)
                 .tabItem { Label("Profile", systemImage: "square.and.pencil") }
                 .tag(1)
         }
@@ -32,5 +34,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(credentialsModel: .init())
 }
