@@ -13,6 +13,7 @@ protocol CredentialsStorageProtocol: AnyObject {
     var firstName: String? { get set }
     var lastName: String? { get set }
     var email: String? { get set }
+    var image: Data? { get set }
     func removeCredentials()
 }
 
@@ -27,6 +28,7 @@ final class CredentialsStorage: CredentialsStorageProtocol {
         case firstNameKey
         case lastNameKey
         case emailKey
+        case imageKey
     }
     
     var isLoggedIn: Bool {
@@ -77,11 +79,25 @@ final class CredentialsStorage: CredentialsStorageProtocol {
         }
     }
     
+    var image: Data? {
+        get {
+            keychainWrapper.data(forKey: Keys.imageKey.rawValue)
+        }
+        set {
+            if let newValue {
+                keychainWrapper.set(newValue, forKey: Keys.imageKey.rawValue)
+            } else {
+                keychainWrapper.removeObject(forKey: Keys.imageKey.rawValue)
+            }
+        }
+    }
+    
     private init() {}
     
     func removeCredentials() {
         keychainWrapper.removeObject(forKey: Keys.firstNameKey.rawValue)
         keychainWrapper.removeObject(forKey: Keys.lastNameKey.rawValue)
         keychainWrapper.removeObject(forKey: Keys.emailKey.rawValue)
+        keychainWrapper.removeObject(forKey: Keys.imageKey.rawValue)
     }
 }
