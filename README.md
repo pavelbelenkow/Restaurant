@@ -41,6 +41,8 @@ Upon first entering the application, users are directed to the onboarding screen
 - Users navigate forward through the onboarding pages by pressing the «Next» button. Upon navigation, there is an animation of a bouncing ball and a change in the background of the page;
 - Pressing the «Done» or «Skip» button directs the user to the registration screen.
 
+[Onboarding Screencast](https://drive.google.com/file/d/13y9uS_2OFJizUnR6NMsrp5oytSB3bVBw/view?usp=sharing)
+
 ## Registration
 
 Upon first entry into the app, users will be prompted to register to browse and order dishes from the restaurant.
@@ -54,6 +56,8 @@ Upon first entry into the app, users will be prompted to register to browse and 
 **Algorithms and Available Actions:**
 
 - Upon pressing the «Register» button, validation of the entered account data occurs. Upon successful validation, the user is directed to the main screen; in case of an error, an alert with error information is displayed.
+
+[Registration Screencast](https://drive.google.com/file/d/18DaD5LfG9QnW-8-ouTaL-P4mpo2hTp0x/view?usp=sharing)
 
 ## Menu
 
@@ -78,6 +82,8 @@ On the main screen, users can search, filter, and view detailed information abou
 - Popup can be collapsed by tapping outside of it or swiping it down;
 - Pressing the «Add To Order» button simulates adding the dish to the order for delivery from the restaurant.
 
+[Menu Screencast](https://drive.google.com/file/d/1PTSp3WQZ_cNl_kp0PlS2IvVmEh9jhR9j/view?usp=sharing)
+
 ## Profile
 
 On the profile screen, users can view the account data entered during registration, change them, and log out.
@@ -97,6 +103,8 @@ On the profile screen, users can view the account data entered during registrati
 - Pressing the «Confirm» button saves the new account data in Keychain, and they will be displayed upon subsequent login to the application;
 - Pressing the «Discard» button restores the account data to their original state;
 - Pressing the «Logout» button directs the user to the registration screen, and their old data are deleted.
+
+[Profile Screencast](https://drive.google.com/file/d/1x81Cwwkp5pRkgWrOXTiBbGYucD6BOWu_/view?usp=sharing)
 
 # Non-Functional Requirements
 
