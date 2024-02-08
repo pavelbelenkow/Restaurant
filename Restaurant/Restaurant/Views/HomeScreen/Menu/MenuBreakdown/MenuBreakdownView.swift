@@ -15,9 +15,16 @@ struct MenuBreakdownView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
-            Text("Order for Delivery")
-                .font(.sectionTitle)
-                .foregroundStyle(.blackRestaurant)
+            HStack(spacing: 12) {
+                Text("Order for Delivery")
+                    .font(.sectionTitle)
+                    .foregroundStyle(.blackRestaurant)
+                
+                Image(.deliveryVan)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 45)
+            }
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
