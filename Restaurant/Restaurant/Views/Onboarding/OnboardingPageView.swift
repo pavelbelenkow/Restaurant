@@ -11,24 +11,23 @@ struct OnboardingPageView: View {
     let page: OnboardingPage
     
     var body: some View {
-        
-        // Title
-        Text(page.title)
-            .font(.title)
-            .fontWeight(.bold)
-            .foregroundStyle(.white)
-            .padding()
-        
-        // Image
-        Image(page.imageName)
-            .resizable()
-            .scaledToFit()
-            .padding()
-        
-        // Description
-        Text(page.description)
-            .foregroundStyle(.white)
-            .multilineTextAlignment(.center)
-            .padding()
+        VStack(spacing: 12) {
+            
+            Text(page.title)
+                .font(.subtitle)
+                .foregroundStyle(.white)
+            
+            Image(page.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(height: UIScreen.main.bounds.height / 2)
+                .cornerRadius(16)
+            
+            Text(page.description)
+                .font(.leading)
+                .foregroundStyle(.white)
+                .frame(height: 45, alignment: .center)
+                .multilineTextAlignment(.center)
+        }
     }
 }
